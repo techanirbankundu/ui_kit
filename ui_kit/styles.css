@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Afacad_Flux';
+    src: url('fonts/Afacad_Flux/AfacadFlux-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #3498db;
+    --primary-color-hover: #2a7db4;
+    --secondary-color: #2ecc71;
+    --secondary-color-hover: #17af56;
+    --raedy-color: #fcd200;
+    --raedy-color-hover: #bfa316;
+    --danger-color: #ff4d00;
+    --danger-color-hover: #cf4003;
+    --font-family: 'Afacad_Flux';
+}
+
+/* text */
+.t-center {
+    text-align: center;
+}
+
+/* Font Size Utilities */
+.t-xs {
+    font-size: 0.75rem;
+    /* 12px */
+}
+
+.t-sm {
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.t-base {
+    font-size: 1rem;
+    /* 16px */
+}
+
+.t-lg {
+    font-size: 1.125rem;
+    /* 18px */
+}
+
+.t-xl {
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+.t-2xl {
+    font-size: 1.5rem;
+    /* 24px */
+}
+
+.t-3xl {
+    font-size: 1.875rem;
+    /* 30px */
+}
+
+.t-4xl {
+    font-size: 2.25rem;
+    /* 36px */
+}
+
+.t-risk {
+    color: var(--danger-color);
+}
+
+.t-profit {
+    color: var(--secondary-color);
+}
+
+.t-ripe {
+    color: var(--raedy-color);
+}
+
+.t-primary {
+    color: var(--primary-color);
+}
+
+/* styles.css continued */
+.bt {
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: 0.1s linear;
+    margin: 5px;
+}
+
+.bt-risk {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.bt-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bt-profit {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bt:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bt:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.5);
+}
+
+/* risk buttons */
+.bt-risk:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 77, 0, 0.5);
+}
+
+.bt-risk:hover {
+    background-color: var(--danger-color-hover);
+    color: white;
+}
+
+/* primary button */
+.bt-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 139, 205, 0.5);
+}
+
+.bt-primary:hover {
+    background-color: var(--primary-color-hover);
+    color: white;
+}
+/* profit btn  */
+.bt-profit:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.5);
+}
+
+.bt-profit:hover{
+    background-color: var(--secondary-color-hover);
+    color: white;
+}
+
+.bt-ripe{
+    background-color: var(--raedy-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.bt-ripe:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(252, 210, 0, 0.5);
+}
+
+.bt-ripe:hover{
+    background-color: var(--raedy-color-hover);
+    color: white;
+}
+
+
+/* from controls */
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.9s linear;
+}
+
+
+body {
+    font-family: var(--font-family);
+}
